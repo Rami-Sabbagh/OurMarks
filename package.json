@@ -4,6 +4,7 @@
   "description": "A module for extracting exams marks from official PDFs, for the Faculty of Information Technology Engineering at Damascus University",
   "repository": "https://github.com/Rami-Sabbagh/OurMarks.git",
   "author": "Rami Sabbagh <ramilego4game@gmail.com> (https://rami-sabbagh.github.io/)",
+  "keywords": ["pdf", "marks", "fite", "damascus"],
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "prototype": "ts-node src/prototype.ts",
