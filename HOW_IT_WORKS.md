@@ -27,7 +27,7 @@ Each text item has the following data structure:
 | direction     | `'ttb'` `'ltr'` `'rtl'` | The direction of the item's content                                            |
 | width         | `number`                | The width of the item, in document units                                       |
 | height        | `number`                | The height of the item, in document units                                      |
-| tranform      | `number[]`              | The transformation matrix of the item                                          |
+| tranform      | `number[]`              | The 3x3 transformation matrix of the item, with only 6 values stored           |
 | tranform`[0]` | `number`                | The (0,0) value in the item's tranformation matrix, represents **scale x**     |
 | tranform`[1]` | `number`                | The (1,0) value in the item's tranformation matrix, represents **skew**        |
 | tranform`[2]` | `number`                | The (0,1) value in the item's tranformation matrix, represents **skew**        |
