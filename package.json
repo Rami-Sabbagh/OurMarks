@@ -1,6 +1,6 @@
 {
   "name": "ourmarks",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A module for extracting exams marks from official PDFs, for the Faculty of Information Technology Engineering at Damascus University",
   "repository": "https://github.com/Rami-Sabbagh/OurMarks.git",
   "homepage": "https://github.com/Rami-Sabbagh/OurMarks/",
