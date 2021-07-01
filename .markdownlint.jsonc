@@ -1,0 +1,4 @@
+{
+    "MD013": false, // Disable line length warnings
+    "MD007": false // Disable ul items identing warnings
+}
