@@ -1,2 +1,4 @@
+
 # OurMarks
-A project that aims to make F.I.T.E university marks more accessible in different formats
+
+A module for extracting exams marks from official PDFs, for the Faculty of Information Technology Engineering at Damascus University
