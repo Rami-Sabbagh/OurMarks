@@ -13,7 +13,7 @@ The PDF documents doesn't allow the exams marks to be used in excel sheets and o
 
 That's why the OurMarks module was created, the module extracts the marks records from the PDF documents into structured data items that can be exported as CSV tables, and used for any computational purposes.
 
-This opens the possibility for:
+This opens the opportunity for:
 
 - Building a structured database of the student's marks.
 - Creating applications for displaying the marks.
