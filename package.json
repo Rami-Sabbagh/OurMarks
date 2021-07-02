@@ -6,7 +6,12 @@
   "homepage": "https://github.com/Rami-Sabbagh/OurMarks/",
   "bugs": "https://github.com/Rami-Sabbagh/OurMarks/issues",
   "author": "Rami Sabbagh <ramilego4game@gmail.com> (https://rami-sabbagh.github.io/)",
-  "keywords": ["pdf", "marks", "fite", "damascus"],
+  "keywords": [
+    "pdf",
+    "marks",
+    "fite",
+    "damascus"
+  ],
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "prototype": "ts-node src/prototype.ts",
@@ -23,6 +28,5 @@
     "csv": "^5.5.0",
     "pdf-lib": "^1.16.0",
     "pdfjs-dist": "^2.8.335",
-    "rxjs": "^7.1.0"
   }
 }
