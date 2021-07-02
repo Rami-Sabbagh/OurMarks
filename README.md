@@ -4,7 +4,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/badge/master)](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/overview/master)
 [![License](https://badgen.net/npm/license/ourmarks)][ourmarks npm]
 [![NPM](https://badgen.net/npm/v/ourmarks)][ourmarks npm]
-[![Dependency Count](https://badgen.net/bundlephobia/dependency-count/ourmarks)][ourmarks bundlephobia]
 [![Minzipped Size](https://badgen.net/bundlephobia/minzip/ourmarks)](https://bundlephobia.com/package/ourmarks)
 [![Tree Shaking](https://badgen.net/bundlephobia/tree-shaking/ourmarks)][ourmarks bundlephobia]
 [![Twitter](https://badgen.net/twitter/follow/rami_sab07)](https://twitter.com/rami_sab07)
