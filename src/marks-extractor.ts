@@ -7,7 +7,7 @@ import { MarkRecord } from './mark-record';
  * @param itemsTable The simplified items table to extract marks from.
  * @returns The extracted marks records.
  */
-export function extractMarks(itemsTable: readonly (readonly Readonly<SimpleTextItem>[])[]): MarkRecord[] {
+export function extractMarksFromItemsTable(itemsTable: readonly (readonly Readonly<SimpleTextItem>[])[]): MarkRecord[] {
 	const markRecords: MarkRecord[] = [];
 
 	for (const itemsRow of itemsTable) {
