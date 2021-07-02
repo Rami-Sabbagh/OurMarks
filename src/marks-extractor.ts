@@ -3,7 +3,7 @@ import { MarkRecord } from './mark-record';
 
 /**
  * Extracts marks records from a table of simplified text items.
- * 
+ *
  * @param itemsTable The simplified items table to extract marks from.
  * @returns The extracted marks records.
  */

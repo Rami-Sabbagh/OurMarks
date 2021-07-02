@@ -50,7 +50,7 @@ export async function extractMarksFromDocument(document: PDFDocumentProxy): Prom
 
 /**
  * Loads a PDF document and extracts the marks records from it.
- * 
+ *
  * @param src Can be a URL where a PDF file is located, a typed array (Uint8Array)
  *              already populated with data, or a parameter object.
  * @returns The extracted marks records.

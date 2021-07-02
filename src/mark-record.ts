@@ -1,6 +1,6 @@
 /**
  * Represents a mark record extracted from the document.
- * 
+ *
  * All the fields (except the `studentId`) can be `null` because they might be missing from the table, or malformed with other values.
  */
 export interface MarkRecord {
