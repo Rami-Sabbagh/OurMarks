@@ -16,10 +16,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prototype": "ts-node src/prototype.ts",
-    "extract_marks": "ts-node src/extract_marks.ts",
-    "outline_text_items": "ts-node src/outline_text_items.ts",
-    "semester_table": "ts-node src/semester_table.ts"
+    "build": "tsc",
+    "prepublish": "tsc"
   },
   "devDependencies": {
     "@types/node": "^15.12.5",
