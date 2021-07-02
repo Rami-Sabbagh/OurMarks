@@ -34,5 +34,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.5.0
         with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           build_dir: ./docs
           jekyll: false
