@@ -25,11 +25,11 @@ jobs:
         with:
           node-version: 14.x
       
-      - name: Download dependencies
-        run: npm install
+      - name: Install the dependencies
+        run: yarn
       
-      - name: Build the application
-        run: npm run build
+      - name: Generate the documentation
+        run: yarn docs
       
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.5.0
