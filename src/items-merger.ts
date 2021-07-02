@@ -7,7 +7,7 @@ import { SimpleTextItem } from './simple-text-item';
  * 
  * This is essential for the items merging algorithm.
  */
- class SortedRow implements Iterable<SimpleTextItem> {
+class SortedRow implements Iterable<SimpleTextItem> {
 
 	/**
 	 * Construct a new row of items view.
