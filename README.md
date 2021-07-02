@@ -2,6 +2,12 @@
 # OurMarks
 
 [![CodeFactor](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/badge/master)](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/overview/master)
+[![License](https://badgen.net/npm/license/ourmarks)][ourmarks npm]
+[![NPM](https://badgen.net/npm/v/ourmarks)][ourmarks npm]
+[![Dependency Count](https://badgen.net/bundlephobia/dependency-count/ourmarks)][ourmarks bundlephobia]
+[![Minzipped Size](https://badgen.net/bundlephobia/minzip/ourmarks)](https://bundlephobia.com/package/ourmarks)
+[![Tree Shaking](https://badgen.net/bundlephobia/tree-shaking/ourmarks)][ourmarks bundlephobia]
+[![Twitter](https://badgen.net/twitter/follow/rami_sab07)](https://twitter.com/rami_sab07)
 
 A module for extracting exams marks from official PDFs, for the Faculty of Information Technology Engineering at Damascus University
 
@@ -86,4 +92,7 @@ It's completely unnecessary to use them, but if you want to play around with how
 > TODO: Fill this section.
 
 [PDF.js]: https://mozilla.github.io/pdf.js/
+[Node.js]: https://nodejs.org/en/
 [apidocs]: https://rami-sabbagh.github.io/OurMarks/
+[ourmarks npm]: https://www.npmjs.com/package/ourmarks
+[ourmarks bundlephobia]: https://bundlephobia.com/package/ourmarks
