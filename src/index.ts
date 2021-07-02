@@ -64,12 +64,10 @@ export async function loadAndExtractMarksFromDocument(src: Parameters<typeof get
 }
 
 /* Export the structures */
-
 export { SimpleTextItem } from './simple-text-item';
 export { MarkRecord } from './mark-record';
 
 /* Export the advanced functions for manually processing a document */
-
 export { getTextItems } from './document-parser';
 export { simplifyTextItem, filterAndSimplifyTextItems } from './items-simplifier';
 export { mergeCloseSimpleTextItems } from './items-merger';
