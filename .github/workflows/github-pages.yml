@@ -30,10 +30,10 @@ jobs:
       
       - name: Generate the documentation
         run: yarn docs
-      
+
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2.5.0
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          build_dir: ./docs
-          jekyll: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          force_orphan: true
