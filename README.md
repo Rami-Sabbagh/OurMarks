@@ -2,7 +2,7 @@
 # OurMarks
 
 [![CodeFactor](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/badge/master)](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/overview/master)
-[![License](https://badgen.net/npm/license/ourmarks)][ourmarks npm]
+[![License](https://badgen.net/npm/license/ourmarks)](https://github.com/Rami-Sabbagh/OurMarks/blob/master/LICENSE)
 [![NPM](https://badgen.net/npm/v/ourmarks)][ourmarks npm]
 [![Minzipped Size](https://badgen.net/bundlephobia/minzip/ourmarks)](https://bundlephobia.com/package/ourmarks)
 [![Tree Shaking](https://badgen.net/bundlephobia/tree-shaking/ourmarks)][ourmarks bundlephobia]
