@@ -63,12 +63,27 @@ or
 yarn add ourmarks
 ```
 
-### Usage
+### Basic Usage
+
+The module provides a top-level, simple, direct to use, asynchronous function for extracting marks from PDF files:
+
+```ts
+import { loadAndExtractMarksFromDocument } from 'ourmarks';
+
+const marksRecords = loadAndExtractMarksFromDocument(rawPDFBinaryData);
+```
+
+> `rawPDFBinaryData` can be a Node.js `Buffer` object, a url to the document, a `Uint8Array` and multiple other options as provided by [PDF.js]
 
 ## API Documentation
 
-> TODO: Fill this section.
+In addition to the top-level `loadAndExtractMarksFromDocument` function, there are a bunch of other lower-level functions for advanced users.
+
+It's completely unnecessary to use them, but if you want to play around with how the module internally works, you can check the documentation [here][apidocs] and read the 'how it works' section below.
 
 ## How it works
 
 > TODO: Fill this section.
+
+[PDF.js]: https://mozilla.github.io/pdf.js/
+[apidocs]: https://rami-sabbagh.github.io/OurMarks/
