@@ -22,7 +22,6 @@
     "prepublish": "tsc"
   },
   "files": [
-    "HOW_IT_WORKS.md",
     "src/",
     "dist/"
   ],
