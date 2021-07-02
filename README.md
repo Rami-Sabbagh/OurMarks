@@ -27,7 +27,7 @@ This opens the possibility for:
 
 ## Example
 
-### Node.js
+### Node.js (TypeScript)
 
 ```ts
 import * as fs from 'fs';
