@@ -19,6 +19,10 @@
     "build": "tsc",
     "prepublish": "tsc"
   },
+  "files": [
+    "src/",
+    "dist/"
+  ],
   "devDependencies": {
     "@types/node": "^15.12.5",
     "csv": "^5.5.0",
