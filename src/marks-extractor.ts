@@ -3,7 +3,7 @@ import { MarkRecord } from './mark-record';
 
 /**
  * Extracts marks records from a table of simplified text items.
- * 
+ *
  * @param itemsTable The simplified items table to extract marks from.
  * @returns The extracted marks records.
  */
@@ -19,7 +19,7 @@ export function extractMarksFromItemsTable(itemsTable: readonly (readonly Readon
 
 		// Create the record.
 		const record: MarkRecord = {
-			studentId: Number.parseInt(studentIdItem.value),
+			studentId: Number.parseInt(studentIdItem.value, 10),
 			studentName: null,
 			studentFatherName: null,
 			practicalMark: null,
@@ -43,7 +43,7 @@ export function extractMarksFromItemsTable(itemsTable: readonly (readonly Readon
 				else if (record.studentFatherName === null) record.studentFatherName = value.trim();
 			}
 
-			if (isMark && marks.length < 3) marks.push(Number.parseInt(value));
+			if (isMark && marks.length < 3) marks.push(Number.parseInt(value, 10));
 		}
 
 		if (marks.length === 1)

@@ -45,7 +45,7 @@ class TablePage implements Iterable<SimpleTextItem[]> {
 
     /**
      * Checks if the projects of 2 items on the Y axis intersect.
-     * 
+     *
      * @param itemA The first item to check.
      * @param itemB The second item to check.
      * @returns Whether their projections on the Y axis intersect or not.
@@ -60,7 +60,7 @@ class TablePage implements Iterable<SimpleTextItem[]> {
 
 /**
  * Groups the list of items into a table structure.
- * 
+ *
  * @param items The target list of simplified text items.
  * @returns A 2-dimensional array of the text items,
  * where the first dimension is for the able rows,

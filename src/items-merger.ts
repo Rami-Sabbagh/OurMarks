@@ -2,16 +2,16 @@ import { SimpleTextItem } from './simple-text-item';
 
 /**
  * Represents a row of sorted items, which can be iterated for each item.
- * 
+ *
  * The items are sorted in ascending order by their X coordinates (which is page-left based).
- * 
+ *
  * This is essential for the items merging algorithm.
  */
 class SortedRow implements Iterable<SimpleTextItem> {
 
 	/**
 	 * Construct a new row of items view.
-	 * 
+	 *
 	 * @param items The items array to take a section from,
 	 * it should be sorted in ascending order by Y coordinates then by X coordinates.
 	 * @param fromIndex The index of the first item included in the view section.
@@ -38,9 +38,9 @@ class SortedRow implements Iterable<SimpleTextItem> {
 
 /**
  * Represents a page of sorted items, which can be iterated for each row of items.
- * 
+ *
  * The items rows are sorted in ascending order by their Y coordinates (which is page-bottom based).
- * 
+ *
  * This is essential for the items merging algorithm.
  */
 class SortedPage implements Iterable<SortedRow> {
@@ -84,7 +84,7 @@ class SortedPage implements Iterable<SortedRow> {
 
 /**
  * Checks whether the item is protected from being merged with other items or not.
- * 
+ *
  * @param item The item to check.
  * @returns Whether the item is protected or not.
  */
@@ -95,7 +95,7 @@ function isItemProtected(item: SimpleTextItem): boolean {
 
 /**
  * Checks whether 2 items should be merged or not.
- * 
+ *
  * @param itemA The first item to check, which should be to the left (lower X coordinates).
  * @param itemB The second item to check, which should be to the right (higher X cordinates).
  * @returns Whether the items should be merged or not.
@@ -112,7 +112,7 @@ function shouldBeMerged(itemA: SimpleTextItem, itemB: SimpleTextItem): boolean {
 /**
  * Merges close Arabic simplified text items into single items.
  * The original list is left unmodified.
- * 
+ *
  * @param items The list of simplified text items.
  * @returns A new list of the text items after merging close Arabic items.
  */
