@@ -103,8 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-# Scripts output directory
-out
-
 # Documentation
 docs
