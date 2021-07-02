@@ -105,3 +105,6 @@ dist
 
 # Scripts output directory
 out
+
+# Documentation
+docs
