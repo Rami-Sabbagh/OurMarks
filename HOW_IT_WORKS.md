@@ -7,13 +7,13 @@ The marks extractor works through a list of 7 steps:
 
 The PDF document is loaded using the `PDF.js` library so it can be parsed.
 
-Once the document has been loaded, it's possible to load each of it's pages.
+Once the document has been loaded, it's possible to load each of its pages.
 
 ## Step 02: Load each page in the document
 
 Each page in the document is loaded.
 
-Once a page it's loaded, it's now possible to read it's content for processing.
+Once a page is loaded, it's possible to read its content for processing.
 
 ## Step 03: Get the text items of each page
 
@@ -100,7 +100,7 @@ The first dimension is for the rows, and the second dimension is for the cells.
 ## Step 07: Extract marks records from the table
 
 Now the simplified text items has been stored in a table structure,
-it's possible to iterate over it's rows and extract marks records.
+it's possible to iterate over its rows and extract marks records.
 
 Mark records have the following data structure:
 
