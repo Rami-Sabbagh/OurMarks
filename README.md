@@ -29,7 +29,11 @@ This opens the opportunity for:
 
 ## Features
 
-> TODO: Fill this section.
+- Top-Level API made simple for direct usage
+- Written in TypeScript, and so type definitions and IDE auto-complete through VS Code and other IDEs are available
+- Well documented and available on [npm][ourmarks npm]
+- Supports [Node.js] and _(to be tested)_ the browser
+- Introduces no side-effects
 
 ## Example
 
