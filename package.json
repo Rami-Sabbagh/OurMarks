@@ -18,6 +18,7 @@
   "sideEffects": false,
   "scripts": {
     "docs": "typedoc",
+    "lint": "eslint --ext .ts src/**",
     "build": "tsc",
     "prepublish": "tsc"
   },
@@ -27,7 +28,12 @@
   ],
   "devDependencies": {
     "@types/node": "^15.12.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
     "csv": "^5.5.0",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
     "pdf-lib": "^1.16.0",
     "ts-node": "^10.0.0",
     "typedoc": "^0.21.2",
