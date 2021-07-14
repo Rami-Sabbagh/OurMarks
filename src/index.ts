@@ -21,13 +21,13 @@ import { extractMarksFromItemsTable } from './marks-extractor';
  * @returns The extracted marks records.
  */
 export async function extractMarksFromPage(page: PDFPageProxy): Promise<MarkRecord[]> {
-    const textItems = await getTextItems(page);
-    const simplifiedTextItems = filterAndSimplifyTextItems(textItems);
-    const mergedTextItems = mergeCloseSimpleTextItems(simplifiedTextItems);
-    const itemsTable = groupIntoRows(mergedTextItems);
-    const marksRecords = extractMarksFromItemsTable(itemsTable);
+	const textItems = await getTextItems(page);
+	const simplifiedTextItems = filterAndSimplifyTextItems(textItems);
+	const mergedTextItems = mergeCloseSimpleTextItems(simplifiedTextItems);
+	const itemsTable = groupIntoRows(mergedTextItems);
+	const marksRecords = extractMarksFromItemsTable(itemsTable);
 
-    return marksRecords;
+	return marksRecords;
 }
 
 /**
@@ -37,15 +37,15 @@ export async function extractMarksFromPage(page: PDFPageProxy): Promise<MarkReco
  * @returns The extracted marks records.
  */
 export async function extractMarksFromDocument(document: PDFDocumentProxy): Promise<MarkRecord[]> {
-    const marksRecords: MarkRecord[] = [];
+	const marksRecords: MarkRecord[] = [];
 
-    for (let pageNumber = 1; pageNumber <= document.numPages; pageNumber++) {
-        const page = await document.getPage(pageNumber);
-        const pageMarksRecords = await extractMarksFromPage(page);
-        marksRecords.push(...pageMarksRecords);
-    }
+	for (let pageNumber = 1; pageNumber <= document.numPages; pageNumber++) {
+		const page = await document.getPage(pageNumber);
+		const pageMarksRecords = await extractMarksFromPage(page);
+		marksRecords.push(...pageMarksRecords);
+	}
 
-    return marksRecords;
+	return marksRecords;
 }
 
 /**
@@ -56,11 +56,11 @@ export async function extractMarksFromDocument(document: PDFDocumentProxy): Prom
  * @returns The extracted marks records.
  */
 export async function loadAndExtractMarksFromDocument(src: Parameters<typeof getDocument>[0]): Promise<MarkRecord[]> {
-    const document = await getDocument(src).promise;
-    const marksRecords = extractMarksFromDocument(document);
-    document.destroy();
+	const document = await getDocument(src).promise;
+	const marksRecords = extractMarksFromDocument(document);
+	document.destroy();
 
-    return marksRecords;
+	return marksRecords;
 }
 
 /* Export the structures */

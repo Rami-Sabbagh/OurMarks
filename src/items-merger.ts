@@ -66,7 +66,7 @@ class SortedPage implements Iterable<SortedRow> {
 				 * The index of the first item included in the range.
 				 */
 				const fromIndex = lastIndex + 1;
-				let rowYCoordinate = this.items[fromIndex].y;
+				const rowYCoordinate = this.items[fromIndex].y;
 
 				/**
 				 * The index of the last item included in the range.

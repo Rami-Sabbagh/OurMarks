@@ -43,7 +43,7 @@ class TablePage implements Iterable<SimpleTextItem[]> {
 		};
 	}
 
-    /**
+	/**
      * Checks if the projects of 2 items on the Y axis intersect.
      *
      * @param itemA The first item to check.

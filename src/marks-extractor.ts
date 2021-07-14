@@ -27,7 +27,7 @@ export function extractMarksFromItemsTable(itemsTable: readonly (readonly Readon
 			examMark: null,
 		};
 
-		let marks: number[] = [];
+		const marks: number[] = [];
 
 		for (const item of itemsRow) {
 			if (item === studentIdItem) continue; // Ignore the student id.

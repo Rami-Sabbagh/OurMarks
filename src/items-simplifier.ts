@@ -1,4 +1,4 @@
-import { TextItem } from "pdfjs-dist/types/display/api";
+import { TextItem } from 'pdfjs-dist/types/display/api';
 import { SimpleTextItem } from './simple-text-item';
 
 /**
@@ -8,7 +8,7 @@ import { SimpleTextItem } from './simple-text-item';
  * @returns The text item simplified.
  */
 export function simplifyTextItem(item: TextItem): SimpleTextItem {
-    return {
+	return {
 		value: item.str,
 		arabic: item.dir === 'rtl' ? 'true' : 'false',
 		x: item.transform[4],
@@ -25,11 +25,11 @@ export function simplifyTextItem(item: TextItem): SimpleTextItem {
  * @returns The text items filtered and simplifed.
  */
 export function filterAndSimplifyTextItems(items: TextItem[]): SimpleTextItem[] {
-    return items
-    .filter(
-        (item) => item.dir !== 'ttb' // Filter all items with 'ttb' direction
+	return items
+		.filter(
+			(item) => item.dir !== 'ttb' // Filter all items with 'ttb' direction
             && item.transform[1] === 0 && item.transform[2] === 0 // or with any skewing/rotation
             && item.str !== '' && item.transform[4] !== 0 && item.transform[5] !== 0 // or is empty or invisible
-    )
-    .map(simplifyTextItem);
+		)
+		.map(simplifyTextItem);
 }

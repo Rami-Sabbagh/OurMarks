@@ -1,4 +1,4 @@
-import { PDFPageProxy, TextItem } from "pdfjs-dist/types/display/api";
+import { PDFPageProxy, TextItem } from 'pdfjs-dist/types/display/api';
 
 /**
  * Gets the text items in a PDF page.
@@ -6,7 +6,7 @@ import { PDFPageProxy, TextItem } from "pdfjs-dist/types/display/api";
  * @returns The text items of the page.
  */
 export async function getTextItems(page: PDFPageProxy): Promise<TextItem[]> {
-    // Marked text items are not enabled in the getTextContent parameters.
+	// Marked text items are not enabled in the getTextContent parameters.
 	const textContent = await page.getTextContent();
 	// And so we're sure that all the items are TextItem.
 	return textContent.items as TextItem[];
