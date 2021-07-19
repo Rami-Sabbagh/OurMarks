@@ -19,6 +19,7 @@
   "scripts": {
     "docs": "typedoc",
     "lint": "eslint --ext .ts src/**",
+    "test": "jest",
     "build": "tsc",
     "prepublish": "tsc"
   },
