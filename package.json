@@ -22,7 +22,7 @@
     "lint": "eslint --ext .ts src/**",
     "test": "jest",
     "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
-    "prepublish": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
+    "prepublishOnly": "yarn build && yarn test"
   },
   "files": [
     "src/",
