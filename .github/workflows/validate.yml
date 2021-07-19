@@ -19,4 +19,4 @@ jobs:
         run: yarn lint
       
       - name: Run unit tests
-        run: yarn test && codecov
+        run: yarn test && yarn codecov
