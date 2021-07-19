@@ -1,5 +1,5 @@
 /* Import external libraries */
-import { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist/types/display/api';
+import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist/types/display/api';
 
 /* Import structures */
 import { MarkRecord } from './mark-record';

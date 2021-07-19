@@ -1,4 +1,4 @@
-import { PDFPageProxy, TextItem } from 'pdfjs-dist/types/display/api';
+import type { PDFPageProxy, TextItem } from 'pdfjs-dist/types/display/api';
 
 /**
  * Gets the text items in a PDF page.
