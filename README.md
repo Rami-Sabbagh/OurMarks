@@ -1,9 +1,9 @@
 
 # OurMarks
 
-![GitHub Actions](https://github.com/Rami-Sabbagh/OurMarks/actions/workflows/validate.yml/badge.svg?branch=master)
 [![Codecov](https://codecov.io/gh/Rami-Sabbagh/OurMarks/branch/master/graph/badge.svg?token=5VYTRPESUE)](https://codecov.io/gh/Rami-Sabbagh/OurMarks)
 [![CodeFactor](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/badge/master)](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/overview/master)
+[![Checks](https://badgen.net/github/checks/Rami-Sabbagh/OurMarks)](https://github.com/Rami-Sabbagh/OurMarks/actions)
 [![License](https://badgen.net/npm/license/ourmarks)](https://github.com/Rami-Sabbagh/OurMarks/blob/master/LICENSE)
 [![NPM](https://badgen.net/npm/v/ourmarks)][ourmarks npm]
 [![Minzipped Size](https://badgen.net/bundlephobia/minzip/ourmarks)](https://bundlephobia.com/package/ourmarks)
