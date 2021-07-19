@@ -32,7 +32,7 @@ This opens the opportunity for:
 - Top-Level API made simple for direct usage
 - Written in TypeScript, and so type definitions and IDE auto-complete through VS Code and other IDEs are available
 - Well documented and available on [npm][ourmarks npm]
-- Supports [Node.js] and _(to be tested)_ the browser
+- Supports [Node.js] and the browser
 - Introduces no side-effects
 
 ## Example
@@ -79,19 +79,59 @@ yarn add ourmarks pdfjs-dist
 
 ### Basic Usage
 
-The module provides a top-level, simple, direct to use, asynchronous function for extracting marks from PDF files:
+The module provides 2 top-level asynchronous functions for extracting marks from PDF documents.
+
+It's expected to have the document loaded using PDF.js first, which is very simple:
 
 ```ts
-import { loadAndExtractMarksFromDocument } from 'ourmarks';
+import { getDocument } from 'pdfjs-dist';
 
-const marksRecords = loadAndExtractMarksFromDocument(rawPDFBinaryData);
+// Inside your main asynchronous function
+async function main() {
+    const document = await getDocument(rawPDFBinaryData).promise;
+
+    // ...
+
+    // Don't forget to destroy the document inorder to free the resources allocated.
+    document.destroy();
+}
+
+// Run the asynchronous function
+main().catch(console.error);
 ```
+
+> On `node.js` you have to import `pdfjs-dist/legacy/build/pdf` instead due to compatibility reasons.
 
 > `rawPDFBinaryData` can be a Node.js `Buffer` object, a url to the document, a `Uint8Array` and multiple other options as provided by [PDF.js]
 
+Then the whole document can be processed at once using `extractMarksFromDocument`:
+
+```ts
+import { extractMarksFromDocument } from 'ourmarks';
+
+// Inside the main() function defined earlier:
+const marksRecords = await extractMarksFromDocument(document);
+```
+
+Or it can be processed page by page using `extractMarksFromPage`:
+
+```ts
+import { extractMarksFromPage, MarkRecord } from 'ourmarks';
+
+const wholeRecords: MarkRecord[] = [];
+
+// Inside the main() function defined earlier:
+for (let i = 1; i <= document.numPages; i++) {
+    const page = await document.getPage(i);
+    const pageRecords = await extractMarksFromPage(page);
+
+    wholeRecords.push(...pageRecords);
+}
+```
+
 ## API Documentation
 
-In addition to the top-level `loadAndExtractMarksFromDocument` function, there are a bunch of other lower-level functions for advanced users.
+In addition to the top-level `extractMarksFromDocument` and `extractMarksFromPage` functions, there are a bunch of other lower-level functions for advanced users.
 
 It's completely unnecessary to use them, but if you want to play around with how the module internally works, you can check the [api documentation][apidocs] and read the 'how it works' section below.
 
