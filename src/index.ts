@@ -1,5 +1,4 @@
 /* Import external libraries */
-import { getDocument } from 'pdfjs-dist/legacy/build/pdf';
 import { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist/types/display/api';
 
 /* Import structures */
@@ -44,21 +43,6 @@ export async function extractMarksFromDocument(document: PDFDocumentProxy): Prom
 		const pageMarksRecords = await extractMarksFromPage(page);
 		marksRecords.push(...pageMarksRecords);
 	}
-
-	return marksRecords;
-}
-
-/**
- * Loads a PDF document and extracts the marks records from it.
- *
- * @param src Can be a URL where a PDF file is located, a typed array (Uint8Array)
- *              already populated with data, or a parameter object.
- * @returns The extracted marks records.
- */
-export async function loadAndExtractMarksFromDocument(src: Parameters<typeof getDocument>[0]): Promise<MarkRecord[]> {
-	const document = await getDocument(src).promise;
-	const marksRecords = extractMarksFromDocument(document);
-	document.destroy();
 
 	return marksRecords;
 }
