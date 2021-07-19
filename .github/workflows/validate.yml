@@ -1,4 +1,4 @@
-name: Lint Source code
+name: Validate the module
 on: push
 
 jobs:
@@ -15,5 +15,8 @@ jobs:
       - name: Install the dependencies
         run: yarn
       
-      - name: Run eslint
+      - name: Run linting
         run: yarn lint
+      
+      - name: Run unit tests
+        run: yarn test
