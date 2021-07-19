@@ -43,7 +43,8 @@ This opens the opportunity for:
 import * as fs from 'fs';
 import * as path from 'path';
 
-import { loadAndExtractMarksFromDocument } from 'ourmarks';
+import { getDocument } from 'pdfjs-dist/legacy/build/pdf';
+import { extractMarksFromDocument } from 'ourmarks';
 
 // Read the document's data
 const TARGET_DOCUMENT = path.resolve(__dirname, './documents/1617010032_programming 3 -2-f1-2021.pdf');
@@ -51,7 +52,10 @@ const documentData = fs.readFileSync(TARGET_DOCUMENT);
 
 // Parse the marks
 async function main() {
-    const marksRecords = await loadAndExtractMarksFromDocument(documentData);
+    const document = await getDocument(documentData).promise;
+    const marksRecords = await extractMarksFromDocument(document);
+    document.destroy();
+
     console.log(marksRecords);
 }
 
@@ -64,13 +68,13 @@ main().catch(console.error);
 ### Installation
 
 ```bash
-npm install ourmarks
+npm install ourmarks pdfjs-dist
 ```
 
 or
 
 ```bash
-yarn add ourmarks
+yarn add ourmarks pdfjs-dist
 ```
 
 ### Basic Usage
