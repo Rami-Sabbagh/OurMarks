@@ -13,15 +13,16 @@
     "damascus"
   ],
   "license": "AGPL-3.0-or-later",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "docs": "typedoc",
     "lint": "eslint --ext .ts src/**",
     "test": "jest",
-    "build": "tsc",
-    "prepublish": "tsc"
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublish": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
   },
   "files": [
     "src/",
