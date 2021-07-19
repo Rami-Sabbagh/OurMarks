@@ -1,4 +1,4 @@
-name: Validate the module
+name: Linting & Testing
 on: push
 
 jobs:
