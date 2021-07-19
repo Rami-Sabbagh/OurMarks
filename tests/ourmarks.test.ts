@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import { getDocument } from 'pdfjs-dist/legacy/build/pdf';
-import { PDFDocumentProxy } from 'pdfjs-dist/types/display/api';
+import type { PDFDocumentProxy } from 'pdfjs-dist/types/display/api';
 import { extractMarksFromDocument, MarkRecord } from '../src';
 
 const documentsPath = path.resolve(__dirname, '../documents');
