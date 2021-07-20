@@ -12,6 +12,8 @@
 
 A module for extracting exams marks from official PDFs, for the Faculty of Information Technology Engineering at Damascus University
 
+![A marks document parsed using the module and viewed using Google sheets](https://github.com/Rami-Sabbagh/OurMarks/raw/f4e6353c17316638af21de1c0802c5700a42be67/images/overview.png)
+
 ## Introduction
 
 Students exams marks at the Faculty of Information Technology Engineering at Damascus University are published as PDF documents of excel tables.
@@ -198,9 +200,13 @@ Then each item is mapped into a more simplified data structure:
 
 ### Step 05: Merge close text items
 
+![The original Arabic items](https://github.com/Rami-Sabbagh/OurMarks/raw/f4e6353c17316638af21de1c0802c5700a42be67/images/items_highlighted.png)
+
 It was found that Arabic content is stored as independent text items of each character.
 
 And so the characters has to be merged back into proper items.
+
+![The Arabic items after merging](https://github.com/Rami-Sabbagh/OurMarks/raw/f4e6353c17316638af21de1c0802c5700a42be67/images/items_merged.png)
 
 A simple algorithm was created to solve that, here's an overview:
 
