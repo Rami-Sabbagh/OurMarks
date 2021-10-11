@@ -1,4 +1,4 @@
-import type { TextItem } from 'pdfjs-dist/types/display/api';
+import type { TextItem } from 'pdfjs-dist/types/src/display/api';
 import { SimpleTextItem } from './simple-text-item';
 
 /**
