@@ -75,13 +75,13 @@ function flattenRecords(records: MarkRecord[]): FlatMarkRecord[] {
 readDocuments();
 
 // The documents should be loaded before running the tests.
-beforeAll(() => {
-	loadDocuments();
+beforeAll(async () => {
+	await loadDocuments();
 });
 
 // The documents better be disposed after running the tests, just to be polite with the interpreter.
-afterAll(() => {
-	unloadDocuments();
+afterAll(async () => {
+	await unloadDocuments();
 });
 
 test.each(documentsNames)('Extract marks from %s', async (documentName) => {
