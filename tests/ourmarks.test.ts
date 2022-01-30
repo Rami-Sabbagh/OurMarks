@@ -31,7 +31,10 @@ async function loadDocuments() {
 	for (const documentName of documentsNames) {
 		const documentData = documentsData[documentName];
 
-		const document = await getDocument(documentData).promise;
+		const document = await getDocument({
+			data: documentData,
+			useSystemFonts: true,
+		}).promise;
 		documents[documentName] = document;
 	}
 }
