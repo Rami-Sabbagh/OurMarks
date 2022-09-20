@@ -99,7 +99,7 @@ test.each(documentsNames)('Extract marks from %s', async (documentName) => {
 
 	// Expect the parsed records to stay the same.
 	// while this test is not really useful to check if the module output is valid while initially creating it.
-	// it's usefull to keep checking that the module is still working properly as it used to before.
+	// it's useful to keep checking that the module is still working properly as it used to before.
 	expect(flatRecords).toMatchSnapshot('Sorted extracted records');
 
 	// Give each document 5 seconds to be processed.

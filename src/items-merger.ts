@@ -97,7 +97,7 @@ function isItemProtected(item: SimpleTextItem): boolean {
  * Checks whether 2 items should be merged or not.
  *
  * @param itemA The first item to check, which should be to the left (lower X coordinates).
- * @param itemB The second item to check, which should be to the right (higher X cordinates).
+ * @param itemB The second item to check, which should be to the right (higher X coordinates).
  * @returns Whether the items should be merged or not.
  */
 function shouldBeMerged(itemA: SimpleTextItem, itemB: SimpleTextItem): boolean {

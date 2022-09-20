@@ -1,5 +1,5 @@
 /**
- * A simplified version of raw text items, without any tranformations applied.
+ * A simplified version of raw text items, without any transformations applied.
  */
 export interface SimpleTextItem {
     /**

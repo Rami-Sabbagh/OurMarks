@@ -19,10 +19,10 @@ export function simplifyTextItem(item: TextItem): SimpleTextItem {
 }
 
 /**
- * Filters and simplifes a list of items, based on how the design document specifies that.
+ * Filters and simplifies a list of items, based on how the design document specifies that.
  *
  * @param items The target text items.
- * @returns The text items filtered and simplifed.
+ * @returns The text items filtered and simplified.
  */
 export function filterAndSimplifyTextItems(items: TextItem[]): SimpleTextItem[] {
 	return items
