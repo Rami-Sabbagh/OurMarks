@@ -1,5 +1,5 @@
 {
     "MD013": false, // Disable line length warnings
-    "MD007": false, // Disable ul items identing warnings
+    "MD007": false, // Disable ul items indentation warnings
     "MD028": false // Disable black line inside block quote warnings
 }
