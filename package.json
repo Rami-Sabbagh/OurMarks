@@ -21,8 +21,9 @@
     "docs": "typedoc",
     "lint": "eslint --ext .ts src/**",
     "test": "jest",
-    "prepublishOnly": "yarn build && yarn test"
     "build": "tsc -p tsconfig.json && tsc -p tsconfig-esm.json",
+    "prepublishOnly": "yarn build && yarn test",
+    "visualize": "ts-node scripts/visualize.ts"
   },
   "files": [
     "src/",
@@ -36,6 +37,7 @@
     "codecov": "^3.8.2",
     "eslint": "^8.23.1",
     "jest": "^29.0.3",
+    "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^2.8.335",
     "ts-jest": "^29.0.1",
     "ts-node": "^10.0.0",
