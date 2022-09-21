@@ -1,0 +1,414 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>OurMarks - v3.0.2</title><meta name="description" content="Documentation for OurMarks - v3.0.2"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">OurMarks - v3.0.2</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-8 col-content">
+<div class="tsd-page-title">
+<h2>OurMarks - v3.0.2</h2></div>
+<div class="tsd-panel tsd-typography">
+<a href="#ourmarks" id="ourmarks" style="color: inherit; text-decoration: none;">
+  <h1>OurMarks</h1>
+</a>
+<p><a href="https://codecov.io/gh/Rami-Sabbagh/OurMarks"><img src="https://codecov.io/gh/Rami-Sabbagh/OurMarks/branch/main/graph/badge.svg?token=5VYTRPESUE" alt="Codecov"></a>
+<a href="https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/overview/main"><img src="https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/badge/main" alt="CodeFactor"></a>
+<a href="https://github.com/Rami-Sabbagh/OurMarks/actions"><img src="https://badgen.net/github/checks/Rami-Sabbagh/OurMarks" alt="Checks"></a>
+<a href="https://github.com/Rami-Sabbagh/OurMarks/blob/main/LICENSE"><img src="https://badgen.net/npm/license/ourmarks" alt="License"></a>
+<a href="https://www.npmjs.com/package/ourmarks"><img src="https://badgen.net/npm/v/ourmarks" alt="NPM"></a>
+<a href="https://bundlephobia.com/package/ourmarks"><img src="https://badgen.net/bundlephobia/minzip/ourmarks" alt="Minzipped Size"></a>
+<a href="https://bundlephobia.com/package/ourmarks"><img src="https://badgen.net/bundlephobia/tree-shaking/ourmarks" alt="Tree Shaking"></a>
+<a href="https://twitter.com/rami_sab07"><img src="https://badgen.net/twitter/follow/rami_sab07" alt="Twitter"></a></p>
+<p>A module for extracting exams marks from official PDFs, for the Faculty of Information Technology Engineering at Damascus University</p>
+<p><img src="https://github.com/Rami-Sabbagh/OurMarks/raw/f4e6353c17316638af21de1c0802c5700a42be67/images/overview.png" alt="A marks document parsed using the module and viewed using Google sheets"></p>
+
+<a href="#introduction" id="introduction" style="color: inherit; text-decoration: none;">
+  <h2>Introduction</h2>
+</a>
+<p>Students exams marks at the Faculty of Information Technology Engineering at Damascus University are published as PDF documents of excel tables.</p>
+<p>The PDF documents doesn&#39;t allow the exams marks to be used in excel sheets and other programs, because they&#39;re only made to be displayed.</p>
+<p>That&#39;s why the OurMarks module was created, the module extracts the marks records from the PDF documents into structured data items that can be exported as CSV tables, and used for any computational purposes.</p>
+<p>This opens the opportunity for:</p>
+<ul>
+<li>Building a structured database of the student&#39;s marks.</li>
+<li>Creating applications for displaying the marks.</li>
+<li>Doing statistical data analysis on the marks.</li>
+<li>Building profiles for students.</li>
+<li>And much more...</li>
+</ul>
+
+<a href="#features" id="features" style="color: inherit; text-decoration: none;">
+  <h2>Features</h2>
+</a>
+<ul>
+<li>Top-Level API made simple for direct usage</li>
+<li>Written in TypeScript, and so type definitions and IDE auto-complete through VS Code and other IDEs are available</li>
+<li>Well documented and available on <a href="https://www.npmjs.com/package/ourmarks">npm</a></li>
+<li>Supports <a href="https://nodejs.org/en/">Node.js</a> and the browser</li>
+<li>Introduces no side-effects</li>
+</ul>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h2>Example</h2>
+</a>
+
+<a href="#nodejs-typescript" id="nodejs-typescript" style="color: inherit; text-decoration: none;">
+  <h3>Node.js (TypeScript)</h3>
+</a>
+<pre><code class="language-ts"><span class="hl-0">import</span><span class="hl-1"> </span><span class="hl-2">*</span><span class="hl-1"> </span><span class="hl-0">as</span><span class="hl-1"> </span><span class="hl-3">fs</span><span class="hl-1"> </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-4">&#39;fs&#39;</span><span class="hl-1">;</span><br/><span class="hl-0">import</span><span class="hl-1"> </span><span class="hl-2">*</span><span class="hl-1"> </span><span class="hl-0">as</span><span class="hl-1"> </span><span class="hl-3">path</span><span class="hl-1"> </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-4">&#39;path&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-3">getDocument</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-4">&#39;pdfjs-dist/legacy/build/pdf&#39;</span><span class="hl-1">;</span><br/><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-3">extractMarksFromDocument</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-4">&#39;ourmarks&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-5">// Read the document&#39;s data</span><br/><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-6">TARGET_DOCUMENT</span><span class="hl-1"> = </span><span class="hl-3">path</span><span class="hl-1">.</span><span class="hl-7">resolve</span><span class="hl-1">(</span><span class="hl-3">__dirname</span><span class="hl-1">, </span><span class="hl-4">&#39;./documents/1617010032_programming 3 -2-f1-2021.pdf&#39;</span><span class="hl-1">);</span><br/><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-6">documentData</span><span class="hl-1"> = </span><span class="hl-3">fs</span><span class="hl-1">.</span><span class="hl-7">readFileSync</span><span class="hl-1">(</span><span class="hl-6">TARGET_DOCUMENT</span><span class="hl-1">);</span><br/><br/><span class="hl-5">// Parse the marks</span><br/><span class="hl-2">async</span><span class="hl-1"> </span><span class="hl-2">function</span><span class="hl-1"> </span><span class="hl-7">main</span><span class="hl-1">() {</span><br/><span class="hl-1">    </span><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-6">document</span><span class="hl-1"> = </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-7">getDocument</span><span class="hl-1">(</span><span class="hl-3">documentData</span><span class="hl-1">).</span><span class="hl-3">promise</span><span class="hl-1">;</span><br/><span class="hl-1">    </span><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-6">marksRecords</span><span class="hl-1"> = </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-7">extractMarksFromDocument</span><span class="hl-1">(</span><span class="hl-3">document</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-3">document</span><span class="hl-1">.</span><span class="hl-7">destroy</span><span class="hl-1">();</span><br/><br/><span class="hl-1">    </span><span class="hl-3">console</span><span class="hl-1">.</span><span class="hl-7">log</span><span class="hl-1">(</span><span class="hl-3">marksRecords</span><span class="hl-1">);</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-5">// Run the asynchronous function</span><br/><span class="hl-7">main</span><span class="hl-1">().</span><span class="hl-7">catch</span><span class="hl-1">(</span><span class="hl-3">console</span><span class="hl-1">.</span><span class="hl-3">error</span><span class="hl-1">);</span>
+</code></pre>
+
+<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+  <h2>Getting Started</h2>
+</a>
+
+<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+  <h3>Installation</h3>
+</a>
+<pre><code class="language-bash"><span class="hl-1">npm install ourmarks pdfjs-dist</span>
+</code></pre>
+<p>or</p>
+<pre><code class="language-bash"><span class="hl-1">yarn add ourmarks pdfjs-dist</span>
+</code></pre>
+
+<a href="#basic-usage" id="basic-usage" style="color: inherit; text-decoration: none;">
+  <h3>Basic Usage</h3>
+</a>
+<p>The module provides 2 top-level asynchronous functions for extracting marks from PDF documents.</p>
+<p>It&#39;s expected to have the document loaded using PDF.js first, which is very simple:</p>
+<pre><code class="language-ts"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-3">getDocument</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-4">&#39;pdfjs-dist&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-5">// Inside your main asynchronous function</span><br/><span class="hl-2">async</span><span class="hl-1"> </span><span class="hl-2">function</span><span class="hl-1"> </span><span class="hl-7">main</span><span class="hl-1">() {</span><br/><span class="hl-1">    </span><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-6">document</span><span class="hl-1"> = </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-7">getDocument</span><span class="hl-1">(</span><span class="hl-3">rawPDFBinaryData</span><span class="hl-1">).</span><span class="hl-3">promise</span><span class="hl-1">;</span><br/><br/><span class="hl-1">    </span><span class="hl-5">// ...</span><br/><br/><span class="hl-1">    </span><span class="hl-5">// Don&#39;t forget to destroy the document inorder to free the resources allocated.</span><br/><span class="hl-1">    </span><span class="hl-3">document</span><span class="hl-1">.</span><span class="hl-7">destroy</span><span class="hl-1">();</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-5">// Run the asynchronous function</span><br/><span class="hl-7">main</span><span class="hl-1">().</span><span class="hl-7">catch</span><span class="hl-1">(</span><span class="hl-3">console</span><span class="hl-1">.</span><span class="hl-3">error</span><span class="hl-1">);</span>
+</code></pre>
+<blockquote>
+<p>On <code>node.js</code> you have to import <code>pdfjs-dist/legacy/build/pdf</code> instead due to compatibility reasons.</p>
+</blockquote>
+<blockquote>
+<p><code>rawPDFBinaryData</code> can be a Node.js <code>Buffer</code> object, a url to the document, a <code>Uint8Array</code> and multiple other options as provided by <a href="https://mozilla.github.io/pdf.js/">PDF.js</a></p>
+</blockquote>
+<p>Then the whole document can be processed at once using <code>extractMarksFromDocument</code>:</p>
+<pre><code class="language-ts"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-3">extractMarksFromDocument</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-4">&#39;ourmarks&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-5">// Inside the main() function defined earlier:</span><br/><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-6">marksRecords</span><span class="hl-1"> = </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-7">extractMarksFromDocument</span><span class="hl-1">(</span><span class="hl-3">document</span><span class="hl-1">);</span>
+</code></pre>
+<p>Or it can be processed page by page using <code>extractMarksFromPage</code>:</p>
+<pre><code class="language-ts"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-3">extractMarksFromPage</span><span class="hl-1">, </span><span class="hl-3">MarkRecord</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-4">&#39;ourmarks&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-6">wholeRecords</span><span class="hl-1">: </span><span class="hl-8">MarkRecord</span><span class="hl-1">[] = [];</span><br/><br/><span class="hl-5">// Inside the main() function defined earlier:</span><br/><span class="hl-0">for</span><span class="hl-1"> (</span><span class="hl-2">let</span><span class="hl-1"> </span><span class="hl-3">i</span><span class="hl-1"> = </span><span class="hl-9">1</span><span class="hl-1">; </span><span class="hl-3">i</span><span class="hl-1"> &lt;= </span><span class="hl-3">document</span><span class="hl-1">.</span><span class="hl-3">numPages</span><span class="hl-1">; </span><span class="hl-3">i</span><span class="hl-1">++) {</span><br/><span class="hl-1">    </span><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-6">page</span><span class="hl-1"> = </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-3">document</span><span class="hl-1">.</span><span class="hl-7">getPage</span><span class="hl-1">(</span><span class="hl-3">i</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-2">const</span><span class="hl-1"> </span><span class="hl-6">pageRecords</span><span class="hl-1"> = </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-7">extractMarksFromPage</span><span class="hl-1">(</span><span class="hl-3">page</span><span class="hl-1">);</span><br/><br/><span class="hl-1">    </span><span class="hl-3">wholeRecords</span><span class="hl-1">.</span><span class="hl-7">push</span><span class="hl-1">(...</span><span class="hl-3">pageRecords</span><span class="hl-1">);</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#api-documentation" id="api-documentation" style="color: inherit; text-decoration: none;">
+  <h2>API Documentation</h2>
+</a>
+<p>In addition to the top-level <code>extractMarksFromDocument</code> and <code>extractMarksFromPage</code> functions, there are a bunch of other lower-level functions for advanced users.</p>
+<p>It&#39;s completely unnecessary to use them, but if you want to play around with how the module internally works, you can check the <a href="https://rami-sabbagh.github.io/OurMarks/">api documentation</a> and read the &#39;how it works&#39; section below.</p>
+
+<a href="#how-it-works" id="how-it-works" style="color: inherit; text-decoration: none;">
+  <h2>How it works</h2>
+</a>
+<p>The marks extractor works through a list of 7 steps:</p>
+
+<a href="#step-01-load-the-document-for-parsing" id="step-01-load-the-document-for-parsing" style="color: inherit; text-decoration: none;">
+  <h3>Step 01: Load the document for parsing</h3>
+</a>
+<p>The PDF document is loaded using the <code>PDF.js</code> library so it can be parsed.</p>
+<p>Once the document has been loaded, it&#39;s possible to load each of its pages.</p>
+
+<a href="#step-02-load-each-page-in-the-document" id="step-02-load-each-page-in-the-document" style="color: inherit; text-decoration: none;">
+  <h3>Step 02: Load each page in the document</h3>
+</a>
+<p>Each page in the document is loaded.</p>
+<p>Once a page is loaded, it&#39;s possible to read its content for processing.</p>
+
+<a href="#step-03-get-the-text-items-of-each-page" id="step-03-get-the-text-items-of-each-page" style="color: inherit; text-decoration: none;">
+  <h3>Step 03: Get the text items of each page</h3>
+</a>
+<p>For each page, a list of all the text items in it is created.</p>
+<p>Each text item has the following data structure:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>string</td>
+<td><code>string</code></td>
+<td>The content of the item</td>
+</tr>
+<tr>
+<td>direction</td>
+<td><code>&#39;ttb&#39;</code> <code>&#39;ltr&#39;</code> <code>&#39;rtl&#39;</code></td>
+<td>The direction of the item&#39;s content</td>
+</tr>
+<tr>
+<td>width</td>
+<td><code>number</code></td>
+<td>The width of the item, in document units</td>
+</tr>
+<tr>
+<td>height</td>
+<td><code>number</code></td>
+<td>The height of the item, in document units</td>
+</tr>
+<tr>
+<td>tranform</td>
+<td><code>number[]</code></td>
+<td>The 3x3 transformation matrix of the item, with only 6 values stored</td>
+</tr>
+<tr>
+<td>tranform<code>[0]</code></td>
+<td><code>number</code></td>
+<td>The (0,0) value in the item&#39;s tranformation matrix, represents <strong>scale x</strong></td>
+</tr>
+<tr>
+<td>tranform<code>[1]</code></td>
+<td><code>number</code></td>
+<td>The (1,0) value in the item&#39;s tranformation matrix, represents <strong>skew</strong></td>
+</tr>
+<tr>
+<td>tranform<code>[2]</code></td>
+<td><code>number</code></td>
+<td>The (0,1) value in the item&#39;s tranformation matrix, represents <strong>skew</strong></td>
+</tr>
+<tr>
+<td>tranform<code>[3]</code></td>
+<td><code>number</code></td>
+<td>The (1,1) value in the item&#39;s tranformation matrix, represents <strong>scale y</strong></td>
+</tr>
+<tr>
+<td>tranform<code>[4]</code></td>
+<td><code>number</code></td>
+<td>The (0,2) value in the item&#39;s tranformation matrix, represents <strong>translate x</strong></td>
+</tr>
+<tr>
+<td>tranform<code>[5]</code></td>
+<td><code>number</code></td>
+<td>The (1,2) value in the item&#39;s tranformation matrix, represents <strong>translate y</strong></td>
+</tr>
+</tbody></table>
+
+<a href="#step-04-filter-and-simplify-the-text-items" id="step-04-filter-and-simplify-the-text-items" style="color: inherit; text-decoration: none;">
+  <h3>Step 04: Filter and simplify the text items</h3>
+</a>
+<p>With the text items stored in a list, the loaded PDF document can be discarded safely as it&#39;s no longer needed.</p>
+<p>The items list is filtered from:</p>
+<ul>
+<li>Items with <code>ttb</code> direction, we&#39;re only intereseted in English and Arabic items.</li>
+<li>Item with non-zero <code>tranform[1]</code> and <code>tranform[2]</code>, we&#39;re not interested in any items with any rotation/skewing.</li>
+<li>Items with empty <code>&#39;&#39;</code> content.</li>
+<li>Items with zero <code>transform[4]</code> or <code>tranform[5]</code>, as they are invisible/invalid.</li>
+</ul>
+<p>Then each item is mapped into a more simplified data structure:</p>
+<blockquote>
+<p>Each item is determined as Arabic if it has <code>rtl</code> direction</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>value</td>
+<td><code>string</code></td>
+<td>The content of the simplified item</td>
+</tr>
+<tr>
+<td>arabic</td>
+<td><code>&#39;true&#39;</code> <code>&#39;false&#39;</code></td>
+<td>Whether the item contains any Arabic characters or not</td>
+</tr>
+<tr>
+<td>x</td>
+<td><code>number</code></td>
+<td>The X coordinates of the item, equal to <code>tranform[4]</code></td>
+</tr>
+<tr>
+<td>y</td>
+<td><code>number</code></td>
+<td>The Y coordinates of the item, equal to <code>tranform[5]</code></td>
+</tr>
+<tr>
+<td>width</td>
+<td><code>number</code></td>
+<td>The width of the item</td>
+</tr>
+<tr>
+<td>height</td>
+<td><code>number</code></td>
+<td>The height of the item</td>
+</tr>
+</tbody></table>
+
+<a href="#step-05-merge-close-text-items" id="step-05-merge-close-text-items" style="color: inherit; text-decoration: none;">
+  <h3>Step 05: Merge close text items</h3>
+</a>
+<p><img src="https://github.com/Rami-Sabbagh/OurMarks/raw/f4e6353c17316638af21de1c0802c5700a42be67/images/items_highlighted.png" alt="The original Arabic items"></p>
+<blockquote>
+<p><strong>Update at 2022-09-21:</strong> The new versions of pdf-js no longer produce this issue!</p>
+</blockquote>
+<blockquote>
+<p><strong>As of OurMarks 3.0.0 this step has been disabled by default but still available behind an option.</strong></p>
+</blockquote>
+<p>It was found that Arabic content is stored as independent text items of each character.</p>
+<p>And so the characters has to be merged back into proper items.</p>
+<p><img src="https://github.com/Rami-Sabbagh/OurMarks/raw/f4e6353c17316638af21de1c0802c5700a42be67/images/items_merged.png" alt="The Arabic items after merging"></p>
+<p>A simple algorithm was created to solve that, here&#39;s an overview:</p>
+<blockquote>
+<p>Please note that the coordinates in the PDF documents are bottom-left corner based.</p>
+</blockquote>
+<ol>
+<li>Sort the list of items in <strong>ascending</strong> order, first by their Y coordinates, then by their X coordinates.</li>
+<li>For each range in the list with the same Y coordinates do:<ul>
+<li>Iterate over the row&#39;s items in left to right order:<ol>
+<li>Check if the current item should be merged with the previous one:<ul>
+<li>They should match in height.</li>
+<li>Neither of the items should be protected.<ul>
+<li>An item is considered protected if it&#39;s a number of 5 digits (a student id).</li>
+</ul>
+</li>
+<li>Define <code>errorTolerance = currentItem.height / 10</code>.</li>
+<li>The condition <code>currentItem.x &lt;= previousItem.X + previousItem.width + errorTolerance</code> should be met.</li>
+</ul>
+</li>
+<li>If the items should be merged, do that by:<ul>
+<li>Concatenating their content in the correct direction.</li>
+<li>Setting the merged item to be Arabic if any of the items were arabic.</li>
+<li>Calculating the new width of the item using <code>currentItem.x + currentItem.width - previousItem.x</code>.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>Please note that the previous item is the item on the left, and the next item is the item on the right.
+That&#39;s because how the items list was sorted.</p>
+</blockquote>
+
+<a href="#step-06-shape-the-items-into-a-table-structure" id="step-06-shape-the-items-into-a-table-structure" style="color: inherit; text-decoration: none;">
+  <h3>Step 06: Shape the items into a table structure</h3>
+</a>
+<p>The text items can be now shaped into a table structure, which is a 2-dimensional list of the items.</p>
+<p>The first dimension is for the rows, and the second dimension is for the cells.</p>
+<ol>
+<li>Sort the list of items in <strong>descending</strong> order, first by their Y coordinates, then by their X coordinates.<ul>
+<li>Items should be considiered they have the same Y coordinates if their Y projections do intersect:<ul>
+<li><code>itemA.y &gt;= itemB.y &amp;&amp; itemA.y &lt;= itemB.y + itemB.height</code> or <code>itemB.y &gt;= itemA.y &amp;&amp; itemB.y &lt;= itemA.y + itemA.height</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Each range in the list with the same Y coordinates do is a row, with the items (considered as cells) being sorted from left to right.</li>
+</ol>
+
+<a href="#step-07-extract-marks-records-from-the-table" id="step-07-extract-marks-records-from-the-table" style="color: inherit; text-decoration: none;">
+  <h3>Step 07: Extract marks records from the table</h3>
+</a>
+<p>Now the simplified text items has been stored in a table structure,
+it&#39;s possible to iterate over its rows and extract marks records.</p>
+<p>Mark records have the following data structure:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>studentId</td>
+<td><code>number</code></td>
+<td>The exam ID of the student, a 5 digits number</td>
+</tr>
+<tr>
+<td>studentName</td>
+<td><code>string</code> / <code>null</code></td>
+<td>The full name of the student, may contain his father&#39;s name in some situations</td>
+</tr>
+<tr>
+<td>studentFatherName</td>
+<td><code>string</code> / <code>null</code></td>
+<td>The name of the student&#39;s father when not included in the full name</td>
+</tr>
+<tr>
+<td>practicalMark</td>
+<td><code>number</code> / <code>null</code></td>
+<td>The practical mark of the exam, usually out of 20 or 30</td>
+</tr>
+<tr>
+<td>theoreticalMark</td>
+<td><code>number</code> / <code>null</code></td>
+<td>The theoretical mark of the exam, usually out of 80 or 70</td>
+</tr>
+<tr>
+<td>examMark</td>
+<td><code>number</code> / <code>null</code></td>
+<td>The total mark of the exam, should be out of 100</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>All the fields (except the <code>studentId</code>) can be <code>null</code> because they might be missing from the table, or malformed with other values.</p>
+</blockquote>
+<p>The marks records are extracted using the following algorithm:</p>
+<ul>
+<li>For each row in the table that starts with a 5 digits number:<ol>
+<li>The <code>studentId</code> is that item.</li>
+<li>Create a list for storing marks.</li>
+<li>Iterate over the rest of items in the row:<ol>
+<li>Skip items with length over 255 characters.</li>
+<li>The item is considered a <em>mark</em> if it&#39;s a number of 1 to 3 digits, and not detected as Arabic.</li>
+<li>If the item is Arabic and the marks list is empty:<ul>
+<li>If <code>studentName</code> is <code>null</code>, then set it to the item.</li>
+<li>If <code>studentFatherName</code> is <code>null</code> then set it to the item.</li>
+</ul>
+</li>
+<li>If the item is considered a <em>mark</em>, and the marks list has less than 3 items, then push the item to the list.</li>
+</ol>
+</li>
+<li>If there&#39;s 1 item in the marks list, then give it to <code>examMark</code>.</li>
+<li>Else if there&#39;s 3 items in the marks list, then give them to <code>practicalMark</code>, <code>theoreticalMark</code> and <code>examMark</code> in this order.</li>
+</ol>
+</li>
+</ul>
+</div></div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li class="current selected"><a href="modules.html">Our<wbr/>Marks -<wbr/> v3.0.2</a>
+<ul></ul></li></ul></div></details></nav>
+<nav class="tsd-navigation secondary menu-sticky">
+<ul>
+<li class="tsd-kind-interface"><a href="interfaces/ExtractionOptions.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg>Extraction<wbr/>Options</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/MarkRecord.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Mark<wbr/>Record</a></li>
+<li class="tsd-kind-interface"><a href="interfaces/SimpleTextItem.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>Simple<wbr/>Text<wbr/>Item</a></li>
+<li class="tsd-kind-function"><a href="functions/extractMarksFromDocument.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-64-path"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)" id="icon-64-text"></path></svg>extract<wbr/>Marks<wbr/>From<wbr/>Document</a></li>
+<li class="tsd-kind-function"><a href="functions/extractMarksFromItemsTable.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>extract<wbr/>Marks<wbr/>From<wbr/>Items<wbr/>Table</a></li>
+<li class="tsd-kind-function"><a href="functions/extractMarksFromPage.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>extract<wbr/>Marks<wbr/>From<wbr/>Page</a></li>
+<li class="tsd-kind-function"><a href="functions/filterAndSimplifyTextItems.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>filter<wbr/>And<wbr/>Simplify<wbr/>Text<wbr/>Items</a></li>
+<li class="tsd-kind-function"><a href="functions/getTextItems.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>get<wbr/>Text<wbr/>Items</a></li>
+<li class="tsd-kind-function"><a href="functions/groupIntoRows.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>group<wbr/>Into<wbr/>Rows</a></li>
+<li class="tsd-kind-function"><a href="functions/mergeCloseSimpleTextItems.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>merge<wbr/>Close<wbr/>Simple<wbr/>Text<wbr/>Items</a></li>
+<li class="tsd-kind-function"><a href="functions/simplifyTextItem.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg>simplify<wbr/>Text<wbr/>Item</a></li></ul></nav></div></div>
+<div class="container tsd-generator">
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div><script src="assets/main.js"></script></body></html>
