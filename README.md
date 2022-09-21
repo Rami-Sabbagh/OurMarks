@@ -2,7 +2,7 @@
 # OurMarks
 
 [![Codecov](https://codecov.io/gh/Rami-Sabbagh/OurMarks/branch/master/graph/badge.svg?token=5VYTRPESUE)](https://codecov.io/gh/Rami-Sabbagh/OurMarks)
-[![CodeFactor](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/badge/master)](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/overview/master)
+[![CodeFactor](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/badge/master)](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/overview/main)
 [![Checks](https://badgen.net/github/checks/Rami-Sabbagh/OurMarks)](https://github.com/Rami-Sabbagh/OurMarks/actions)
 [![License](https://badgen.net/npm/license/ourmarks)](https://github.com/Rami-Sabbagh/OurMarks/blob/master/LICENSE)
 [![NPM](https://badgen.net/npm/v/ourmarks)][ourmarks npm]
