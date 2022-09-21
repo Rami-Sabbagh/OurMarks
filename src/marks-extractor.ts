@@ -33,8 +33,6 @@ export function extractMarksFromItemsTable(itemsTable: readonly (readonly Readon
 			if (item === studentIdItem) continue; // Ignore the student id.
 			const { value, arabic } = item;
 
-			if (value.length > 255) continue; // Invalid item.
-
 			const isMark = arabic === 'false' && value.match(/^\d{1,3}$/);
 			const isArabic = arabic === 'true';
 
