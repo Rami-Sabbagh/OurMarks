@@ -89,18 +89,22 @@ afterAll(async () => {
 
 test.each(documentsNames)('Extract marks from %s', async (documentName) => {
 	const document = documents[documentName];
-	const records = await extractMarksFromDocument(document);
+	const recordsUnmerged = await extractMarksFromDocument(document);
+	const recordsMerged = await extractMarksFromDocument(document, { mergeItems: true });
 
 	// Sort the records so the results can be more deterministic.
-	records.sort(compareRecords);
+	recordsUnmerged.sort(compareRecords);
+	recordsMerged.sort(compareRecords);
 
 	// Flatten the records to result with smaller size Jest snapshot files.
-	const flatRecords = flattenRecords(records);
+	const flatRecordsUnmerged = flattenRecords(recordsUnmerged);
+	const flatRecordsMerged = flattenRecords(recordsMerged);
 
 	// Expect the parsed records to stay the same.
 	// while this test is not really useful to check if the module output is valid while initially creating it.
 	// it's useful to keep checking that the module is still working properly as it used to before.
-	expect(flatRecords).toMatchSnapshot('Sorted extracted records');
+	expect(flatRecordsUnmerged).toMatchSnapshot('Sorted extracted records unmerged');
+	expect(flatRecordsMerged).toMatchSnapshot('Sorted extracted records merged');
 
 	// Give each document 5 seconds to be processed.
 }, 5_000);
