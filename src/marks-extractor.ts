@@ -41,6 +41,7 @@ export function extractMarksFromItemsTable(itemsTable: readonly (readonly Readon
 			if (isArabic && marks.length === 0) {
 				if (record.studentName === null) record.studentName = value.trim();
 				else if (record.studentFatherName === null) record.studentFatherName = value.trim();
+				else record.studentName = `${record.studentName} ${record.studentFatherName}`, record.studentFatherName = value.trim();
 			}
 
 			if (isMark) marks.push(Number.parseInt(value, 10));
