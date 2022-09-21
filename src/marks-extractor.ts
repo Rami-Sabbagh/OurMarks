@@ -43,13 +43,13 @@ export function extractMarksFromItemsTable(itemsTable: readonly (readonly Readon
 				else if (record.studentFatherName === null) record.studentFatherName = value.trim();
 			}
 
-			if (isMark && marks.length < 3) marks.push(Number.parseInt(value, 10));
+			if (isMark) marks.push(Number.parseInt(value, 10));
 		}
 
-		if (marks.length === 1)
-			record.examMark = marks[0];
-		else if (marks.length === 3)
+		if (marks.length === 3)
 			[record.practicalMark, record.theoreticalMark, record.examMark] = marks;
+		else if (marks.length !== 0)
+			record.examMark = marks[marks.length - 1];
 
 		markRecords.push(record);
 	}

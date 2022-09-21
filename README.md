@@ -202,6 +202,10 @@ Then each item is mapped into a more simplified data structure:
 
 ![The original Arabic items](https://github.com/Rami-Sabbagh/OurMarks/raw/f4e6353c17316638af21de1c0802c5700a42be67/images/items_highlighted.png)
 
+> **Update at 2022-09-21:** The new versions of pdf-js no longer produce this issue!
+
+> **As of OurMarks 3.0.0 this step has been disabled by default but still available behind an option.**
+
 It was found that Arabic content is stored as independent text items of each character.
 
 And so the characters has to be merged back into proper items.
