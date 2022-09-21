@@ -21,8 +21,8 @@
     "docs": "typedoc",
     "lint": "eslint --ext .ts src/**",
     "test": "jest",
-    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "prepublishOnly": "yarn build && yarn test"
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-esm.json",
   },
   "files": [
     "src/",
