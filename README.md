@@ -1,10 +1,10 @@
 
 # OurMarks
 
-[![Codecov](https://codecov.io/gh/Rami-Sabbagh/OurMarks/branch/master/graph/badge.svg?token=5VYTRPESUE)](https://codecov.io/gh/Rami-Sabbagh/OurMarks)
-[![CodeFactor](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/badge/master)](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/overview/main)
+[![Codecov](https://codecov.io/gh/Rami-Sabbagh/OurMarks/branch/main/graph/badge.svg?token=5VYTRPESUE)](https://codecov.io/gh/Rami-Sabbagh/OurMarks)
+[![CodeFactor](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/badge/main)](https://www.codefactor.io/repository/github/rami-sabbagh/ourmarks/overview/main)
 [![Checks](https://badgen.net/github/checks/Rami-Sabbagh/OurMarks)](https://github.com/Rami-Sabbagh/OurMarks/actions)
-[![License](https://badgen.net/npm/license/ourmarks)](https://github.com/Rami-Sabbagh/OurMarks/blob/master/LICENSE)
+[![License](https://badgen.net/npm/license/ourmarks)](https://github.com/Rami-Sabbagh/OurMarks/blob/main/LICENSE)
 [![NPM](https://badgen.net/npm/v/ourmarks)][ourmarks npm]
 [![Minzipped Size](https://badgen.net/bundlephobia/minzip/ourmarks)](https://bundlephobia.com/package/ourmarks)
 [![Tree Shaking](https://badgen.net/bundlephobia/tree-shaking/ourmarks)][ourmarks bundlephobia]
