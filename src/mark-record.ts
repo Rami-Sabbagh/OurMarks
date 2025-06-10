@@ -12,23 +12,47 @@ export interface MarkRecord {
     /**
      * The full name of the student, may contain his father's name in some situations.
      */
-	studentName: string | null,
+    studentName: string | null,
     /**
      * The name of the student's father when not included in the full name.
      */
-	studentFatherName: string | null,
+    studentFatherName: string | null,
 
     /**
      * The practical mark of the exam, usually out of 20 or 30.
      */
-	practicalMark: number | null,
+    practicalMark: number | null,
     /**
      * The theoretical mark of the exam, usually out of 80 or 70.
      */
-	theoreticalMark: number | null,
+    theoreticalMark: number | null,
 
     /**
      * The total mark of the exam, should be out of 100.
      */
-	examMark: number | null,
+    examMark: number | null,
+}
+
+export interface MarkRecord2 {
+    /**
+     * The exam ID of the student, a 5 digits number.
+     */
+    studentId: number,
+
+    extractedStrings: string[] | null;
+
+
+    /**
+     * The practical mark of the exam, usually out of 20 or 30.
+     */
+    practicalMark: number | null,
+    /**
+     * The theoretical mark of the exam, usually out of 80 or 70.
+     */
+    theoreticalMark: number | null,
+
+    /**
+     * The total mark of the exam, should be out of 100.
+     */
+    examMark: number | null,
 }

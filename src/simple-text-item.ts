@@ -9,7 +9,7 @@ export interface SimpleTextItem {
     /**
      * Whether the item contains any Arabic characters or not.
      */
-	arabic: 'true' | 'false',
+	arabic: string,
     /**
      * The X coordinates of the item's bottom-left corner.
      */
